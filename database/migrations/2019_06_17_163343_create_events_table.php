@@ -8,15 +8,14 @@ class CreateEventsTable extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
     public function up()
     {
         Schema::create('events', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('event');
-            $table->date('schedule');
+            $table->date('schedule_start');
+            $table->date('schedule_end')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -24,8 +23,6 @@ class CreateEventsTable extends Migration
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
     public function down()
     {

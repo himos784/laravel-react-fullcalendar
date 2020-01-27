@@ -23,6 +23,7 @@ class Event extends Model
      */
     protected $fillable = [
         'event',
-        'schedule'
+        'schedule_start',
+        'schedule_end',
     ];
 }
