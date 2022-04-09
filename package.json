@@ -29,7 +29,7 @@
         "@fullcalendar/core": "^4.2.0",
         "@fullcalendar/daygrid": "^4.2.0",
         "@fullcalendar/react": "^4.2.0",
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "rc-datepicker": "^5.0.14",
         "react-toastify": "^5.2.1",
         "reactstrap": "^8.0.0"
